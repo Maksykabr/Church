@@ -1,0 +1,191 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'normal/css/main.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rozha+One&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&display=swap" rel="stylesheet"> 
+    <title>Church</title>
+</head>
+<body>
+	<!--header-->
+    <header class="header">
+        <div class="intro">
+            <div class="video">
+                <video autoplay="autoplay" loop="loop" muted src="{% static 'normal/movie/intro.mp4' %}" class="video_item"></video>
+            </div>
+        </div>
+        <!--navbar-->
+        <nav class="nav">
+            <ul class="ul">
+                <li class="li"><a href="#">NEWS</a></li>
+                <li class="li"><a href="#">SERVICES</a></li>
+                <li class="li"><a href="#">TIMETABLE PRAYER</a></li>
+                <span class="email">vladantonyak2@gmail.com</span>
+                <div class="social">
+                    <div class="social_ul">
+                        <img src="{% static 'normal/img/sociable/Rectangle 19.svg' %}" alt="">
+                        <img src="{% static 'normal/img/sociable/Rectangle 20.svg' %}" alt="">
+                        <img src="{% static 'normal/img/sociable/Rectangle 21.svg' %}" alt="">
+                    </div>
+                </div>
+            </ul>
+        </nav>
+        <div class="menu">Menu</div>
+    </header>
+    <!--selection-->
+ 	<section>
+        <div class="wrapper">
+            <!--Content-->
+            <div class="slider">
+                <div class="slider_item">
+                    <img src="{% static 'normal/img/Slider/slide_img1.png' %}" alt="Photo Church just background">
+                    <h1 class="title_news">News</h1>
+                </div>
+                <div class="slider_item">
+                    <img src="{% static 'normal/img/Slider/slide_img2.png' %}" alt="Photo Church just background">
+                    <div class="content">
+                        <div class="title1">TITLE</div>
+                        <p class="text1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi, nobis. Quo accusamus dolores error unde exercitationem reiciendis repellendus amet, pariatur nisi cumque at soluta eos vel facere, delectus tempore repudiandae!</p>
+                    </div>
+                </div>
+                <div class="slider_item">
+                    <img src="{% static 'normal/img/Slider/slide_img3.png' %}" alt="Photo Church just background">
+                    <div class="content">
+                        <div class="title2">TITLE</div>
+                        <p class="text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid at fugit provident enim inventore molestiae ipsum ducimus, quidem facere numquam libero iusto cumque earum culpa mollitia autem? Magnam, nesciunt quo?</p>
+                    </div>
+                </div>
+                <div class="slider_item">
+                    <img src="{% static 'normal/img/Slider/slide_img4.png' %}" alt="Photo Church just background">
+                    <div class="content">
+                        <div class="title3">TITLE</div>
+                        <p class="text3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi rerum unde sit recusandae cupiditate quam fugit nam earum libero magni maxime, saepe harum, maiores veniam repellat laudantium suscipit qui similique!</p>
+                    </div>
+                </div>
+            </div>
+            <!--Block services-->
+            <div class="services">
+                <div class="title_services">Послуги</div>
+                <div class="baptism">
+                    <img src="{% static 'normal/img/services/img_baptism.png' %}" alt="">
+                    <div class="title_baptism"></div>
+                    <p class="content">Хрищення — Таїнство, що символізує духовне перенародження, яке звершується над людьми, що народилися від Святого Духа, прийнявши свідчення Спасителя, і стають частиною Його Тіла - Христової Церкви. Про його значення Христос сказав Никодимові: «Істинно кажу тобі: хто не народиться від води й Духа, той не може ввійти в Царство Боже…».</p>
+                    <div class="button_right"><a href="#">Замовити</a></div>
+                </div>
+                <div class="marriage">
+                    <img src="{% static 'normal/img/services/img_marriage.png' %}" alt="img Marriage">
+                    <div class="title_marriage">Вінчання</div>
+                    <p class="content">Вінча́ння — одне з таїнств — союз чоловіка та жінки, освячений церквою, де, як вважається, Господь своєю присутністю з'єднує душі в єдине ціле. В таїнстві вінчання Господь подає свою благодатну допомогу, щоб подружжя мало змогу бороти всі негаразди, які трапляються у спільному житті. Вступаючі у шлюб, чоловік і жінка перед Богом обіцяють одне одному любов, вірність та чесність подружню впродовж усього життя. Церква сприймає шлюб як таїнство, причому таїнством є не стільки вінчання, скільки сам шлюб як союз чоловіка і жінки, освячений церквою. </p>
+                    <div class="button_left"><a href="#">Замовити</a></div>
+                </div>
+                <div class="baptism">
+                    <img src="{% static 'normal/img/services/img_funeral.png' %}" alt="">
+                    <div class="title_baptism">Похорони </div>
+                    <p class="content">По́хорон — сукупність обрядів, пов'язаних із проводами і похованням тіла померлого. Поминальні і поховальні обряди виконуються з метою вшанування покійника і, залежно від різних культурних та релігійних груп, відбуваються у формі святкування чи трауру. </p>
+                    <div class="button_right"><a href="#">Замовити</a></div>
+                </div>
+            </div>
+            <!--time_table-->
+            <div class="time_table">
+                <div class="time_tible_title">Розклад відправ</div>
+                <div class="day">
+                    <div class="day_name">{{ day_1 }}</div>
+                    {% for c in monday %}
+                        <div class="text">
+                            <div class="departure">{{ c.date_time }}</div>
+                            <div class="departure">{{ c.title }}</div>
+                            <div class="departure">{{ c.content }}</div>
+                            
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class="day">
+                    <div class="day_name">{{ day_2 }}</div>
+                    {% for c in tuesday %}
+                        <div class="text">
+                            <div class="departure">{{ c.date_time }}</div>
+                            <div class="departure">{{ c.title }}</div>
+                            <div class="departure">{{ c.content }}</div>
+                            
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class="day">
+                    <div class="day_name">{{ day_3 }}</div>
+                    {% for c in wednesday %}
+                        <div class="text">
+                            <div class="departure">{{ c.date_time }}</div>
+                            <div class="departure">{{ c.title }}</div>
+                            <div class="departure">{{ c.content }}</div>
+                            
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class="day">
+                    <div class="day_name">{{ day_4 }}</div>
+                    {% for c in thursday %}
+                        <div class="text">
+                            <div class="departure">{{ c.date_time }}</div>
+                            <div class="departure">{{ c.title }}</div>
+                            <div class="departure">{{ c.content }}</div>
+                            
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class="day">
+                    <div class="day_name">{{ day_5 }}</div>
+                    {% for c in friday %}
+                        <div class="text">
+                            <div class="departure">{{ c.date_time }}</div>
+                            <div class="departure">{{ c.title }}</div>
+                            <div class="departure">{{ c.content }}</div>
+                            
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class="day">
+                    <div class="day_name">{{ day_6 }}</div>
+                    {% for c in saturday %}
+                        <div class="text">
+                            <div class="departure">{{ c.date_time }}</div>
+                            <div class="departure">{{ c.title }}</div>
+                            <div class="departure">{{ c.content }}</div>
+                            
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class="day">
+                    <div class="day_name">{{ day_7 }}</div>
+                    {% for c in sunday %}
+                        <div class="text">
+                            <div class="departure">{{ c.date_time }}</div>
+                            <div class="departure">{{ c.title }}</div>
+                            <div class="departure">{{ c.content }}</div>
+                            
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <!--history-->
+            <div class="history">
+                <div class="history_title">Історія винекнення</div>
+                <video src="{% static 'life/movie/history_church.mp4' %}" controls="controls" autoplay="autoplay"  class="history_movie"></video>
+            </div>
+            <!--map-->
+            <div class="map">
+                <div class="map_title">Карта</div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2543.791687889829!2d24.23865985116603!3d50.389081699565345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4724df2cbc09eb73%3A0x6d833efb5a6027dc!2z0KbQtdGA0LrQstCwINCS0LvQsNC00LjRh9C40YbRliDQkdC-0LPQvtGA0L7QtNC40YbRlg!5e0!3m2!1suk!2sua!4v1627835342859!5m2!1suk!2sua" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{% static 'normal/js/slick.min.js' %}"></script>
+    <script src="{% static 'normal/js/script.js' %}"></script>
+</body>
+</html>

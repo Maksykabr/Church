@@ -1,0 +1,409 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  overflow-x: hidden;
+}
+
+/****************************************************************************************
+                                        HEADER
+****************************************************************************************/
+.header {
+  height: 100%;
+  width: 100%;
+}
+
+.intro {
+  position: relative;
+  max-height: 100vh;
+  overflow: hidden;
+  margin-bottom: 5%;
+}
+.intro::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.video {
+  position: relative;
+  padding-bottom: 56.25%;
+  margin-bottom: 5%;
+  z-index: 1;
+}
+.video_item {
+  position: fixed;
+  top: 0;
+  right: 0;
+  opacity: .7;
+  height: auto;
+  width: 100%;
+}
+
+.nav {
+  width: 40%;
+  background-color: #000000;
+  position: absolute;
+  top: 0;
+  left: -35%;
+  widows: 100%;
+  height: 100%;
+  z-index: 4;
+  transition: all ease-in-out .4s;
+}
+.nav:hover {
+  left: 0%;
+}
+.nav:hover + .menu {
+  display: none;
+}
+.nav .ul {
+  padding: 5%;
+}
+.nav .li {
+  text-align: center;
+  margin: 12% 0;
+}
+.nav a {
+  color: #ffffff;
+  text-decoration: none;
+  opacity: .9;
+  font-size: 50px;
+  font-family: "Rozha One", serif;
+  transition: all ease-in-out .3s;
+}
+.nav a:hover {
+  opacity: 1;
+  text-decoration: underline #ffffff;
+}
+
+.email {
+  display: block;
+  width: 100%;
+  color: #ffffff;
+  font-size: 40px;
+  margin: 12% 0;
+  text-align: center;
+}
+
+.social {
+  width: 90%;
+  position: absolute;
+  bottom: 0;
+}
+.social_ul {
+  text-align: center;
+}
+.social_ul img:hover {
+  width: 12%;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 6%;
+  z-index: 4;
+  font-size: 40px;
+  font-weight: bold;
+  font-style: italic;
+  color: #ffffff;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/*********************************************************************************
+                                     SECTION
+**********************************************************************************/
+section {
+  position: relative;
+  z-index: 5;
+}
+
+/*Slider*/
+.slick {
+  /*Limited shell*/
+  /*Ribbon slider*/
+}
+.slick-slider {
+  position: relative;
+}
+.slick-list {
+  overflow: hidden;
+}
+.slick-track {
+  display: flex;
+  align-items: flex-start;
+}
+
+.slider {
+  position: relative;
+}
+.slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  font-size: 0;
+  width: 30px;
+  height: 50px;
+}
+.slider_item {
+  width: 1518px;
+}
+.slider_item .title_news {
+  width: 1518px;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  z-index: 10;
+  font-family: "Rozha One", serif;
+  font-size: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slick-next.slick-arrow, .slick-prev.slick-arrow {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  margin: 0 2%;
+}
+
+.slick-next.slick-arrow {
+  right: 0;
+  background: url("../img/Slider/icons/next.png") 0 0/100% no-repeat;
+}
+
+.slick-prev.slick-arrow {
+  left: 0;
+  background: url("../img/Slider/icons/prev.png") 0 0/100% no-repeat;
+}
+
+.slick-prev.slick-arrow.slick-disabled, .slick-next.slick-arrow.slick-disabled {
+  opacity: 0.2;
+}
+
+.title1, .title2, .title3 {
+  position: absolute;
+  top: 10%;
+  z-index: 10;
+  font-size: 100px;
+  font-style: "Rozha One", serif;
+  font-weight: bold;
+}
+
+.text1, .text2, .text3 {
+  position: absolute;
+  top: 40%;
+  z-index: 10;
+  font-size: 40px;
+  font-weight: 100;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+}
+
+.title1 {
+  left: 35%;
+}
+
+.title2 {
+  left: 60%;
+}
+
+.title3 {
+  left: 85%;
+}
+
+.text1 {
+  max-width: 1340px;
+  left: 26.5%;
+}
+
+.text2 {
+  max-width: 1340px;
+  left: 51.5%;
+}
+
+.text3 {
+  max-width: 1340px;
+  left: 76.5%;
+}
+
+/*Services*/
+.services {
+  margin-top: 5%;
+}
+.services img {
+  height: 650px;
+  width: 500px;
+  float: left;
+  margin: 0 2%;
+}
+
+.title_services {
+  width: 100%;
+  text-align: center;
+  font-size: 60px;
+  font-family: "Rozha One", serif;
+  font-weight: bold;
+  background-color: #000000;
+  color: #ffffff;
+  margin-bottom: 5%;
+}
+
+.baptism, .funeral {
+  padding: 1%;
+  position: relative;
+}
+
+.title_baptism, .title_funeral, .title_marriage {
+  width: 60%;
+  text-align: center;
+  font-size: 50px;
+  color: #000000;
+  font-weight: bold;
+  font-family: "Rozha One", serif;
+  margin: 3% 0;
+}
+
+.button_right, .button_left {
+  position: absolute;
+  bottom: 0;
+  margin: 1% 5%;
+  padding: 2% 7%;
+  box-shadow: 4px 4px 9px 1px #000000;
+  background-color: rgba(47, 47, 47, 0.85);
+  transition: background-color 0.5s;
+}
+
+.content {
+  font-size: 30px;
+  padding: 0 5%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  margin-bottom: 5%;
+}
+
+.button_right {
+  right: 0;
+}
+.button_right:hover {
+  background-color: #1D1D1D;
+  box-shadow: 4px 4px 15px 3px #000000;
+}
+.button_right a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.marriage {
+  position: relative;
+  padding: 1%;
+  margin: 5% 0;
+}
+.marriage img {
+  float: right;
+}
+
+.title_marriage {
+  float: left;
+}
+
+.button_left {
+  left: 0;
+}
+.button_left:hover {
+  background-color: #1D1D1D;
+  box-shadow: 4px 4px 15px 3px #000000;
+}
+.button_left a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+/*Time-table*/
+.time_table {
+  background-color: #000000;
+}
+.time_table_title {
+  color: #ffffff;
+  font-family: "Rozha One", serif;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
+  margin: 5% 0;
+}
+
+.day {
+  width: 50%;
+  float: left;
+}
+.day_name {
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+  font-family: "Rozha One", serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.text {
+  width: 100%;
+  height: 100%;
+  margin-left: 5%;
+  padding: 3%;
+}
+.text .departure {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  margin: 1% 0;
+}
+
+.history {
+  margin: 5% 0;
+}
+.history_title {
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  background-color: #000000;
+  font-family: "Rozha One", serif;
+  font-size: 60px;
+  font-weight: bold;
+}
+.history_movie {
+  width: 100%;
+  margin-top: 5%;
+}
+
+.map {
+  width: 100%;
+  height: auto;
+}
+.map_title {
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  background-color: #000000;
+  font-family: "Rozha One", serif;
+  font-size: 60px;
+  font-weight: bold;
+}
+.map iframe {
+  width: 100%;
+  height: 100vh;
+}
